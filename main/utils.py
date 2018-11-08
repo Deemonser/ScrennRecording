@@ -1,13 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import requests
+from moviepy.editor import VideoFileClip
+
 
 class Video(object):
     def __init__(self, path):
         self.path = path
 
+    def getDuring(self):
+        return VideoFileClip(self.path).duration
+
+    def getSize(self):
+        return os.path.getsize(self.path)
+
     def play(self):
         from os import startfile
         startfile(self.path)
+
+
 
 
 class Movie_MP4(Video):
@@ -64,7 +75,12 @@ def searchFile(fileList, path, text):
 
 
 if __name__ == '__main__':
-    movie = Movie_MP4(r'C:\Users\Deemons\Desktop\20181107_223803.mp4')
-    files = getFile(r'C:\Users\Deemons\Desktop', '.mp4')
+    files = getFile(r'E:\pythonProject\Test', '.itcast')
     print(files)
-    # movie.play()
+    movie = Movie_MP4(files[0])
+    print(str(movie.getSize()))
+    print(time.time())
+    movie.play()
+    # time.sleep(movie.getDuring())
+    print(time.time())
+
