@@ -26,7 +26,7 @@ class Control:
         during = movie.getDuringByRate(self.rate)
         print(str(during))
 
-        record = Record(os.path.split(file), during)
+        record = Record(file, during)
         # 播放
         movie.play()
         movie.fullWindow()
@@ -45,6 +45,6 @@ class Control:
 
 
 if __name__ == '__main__':
-    rate = 5000 / 5
-    control = Control(r'../../', '.itcast', rate)
+    rate = 1000000 / 1
+    control = Control(r'E:\pythonProject\Test', '.itcast', rate)
     control.doAllTask()

@@ -3,6 +3,8 @@
 import requests
 from moviepy.editor import VideoFileClip
 import os
+import pyautogui
+from main import Screen
 
 
 class Video(object):
@@ -22,11 +24,13 @@ class Video(object):
         os.startfile(self.path)
 
     def fullWindow(self):
-        print("全屏")
-
+        x, y = Screen.getPosition('./image/fullScreenButton.png')
+        pyautogui.click(x, y)
 
     def closeWindow(self):
-        print("关闭")
+        pyautogui.press("esc")
+        x, y = Screen.getPosition('./image/closePlayer.png')
+        pyautogui.click(x, y)
 
 
 class Movie_MP4(Video):
