@@ -14,19 +14,22 @@ class Video(object):
     def getSize(self):
         return os.path.getsize(self.path)
 
+    def getDuringByRate(self, rate):
+        return self.getSize() / rate
+
     def play(self):
         from os import startfile
         startfile(self.path)
-
-
 
 
 class Movie_MP4(Video):
     type = 'MP4'
 
 
-from pynput.mouse import Button, Controller
+from pynput.mouse import Button, Controller as Mouse
+from pynput.keyboard import Key, Controller as Keyboard
 import time
+import pyautogui
 
 # mouse = Controller()
 # print(mouse.position)
@@ -74,13 +77,49 @@ def searchFile(fileList, path, text):
         ""
 
 
-if __name__ == '__main__':
-    files = getFile(r'E:\pythonProject\Test', '.itcast')
-    print(files)
-    movie = Movie_MP4(files[0])
-    print(str(movie.getSize()))
-    print(time.time())
-    movie.play()
-    # time.sleep(movie.getDuring())
-    print(time.time())
+class record:
 
+    def __init__(self, path, during):
+        self.path = str(path).replace(str(os.path.splitext(path)[1]), ".mp4")
+        self.during = during
+        self.k = Keyboard()
+
+    def startRecording(self):
+        self.k.press(Key.ctrl_l)
+        self.k.press(Key.f1)
+        self.k.release(Key.f1)
+        self.k.release(Key.ctrl_l)
+
+    def stopRecording(self):
+        self.k.press(Key.ctrl_l)
+        self.k.press(Key.f2)
+        self.k.release(Key.f2)
+        self.k.release(Key.ctrl_l)
+        print(self.path)
+        time.sleep(1)
+        self.k.type(self.path)
+        self.k.press(Key.enter)
+        self.k.release(Key.enter)
+
+
+if __name__ == '__main__':
+    files = getFile(r'../../', '.itcast')
+    rate = 5000000 / 5
+    print(files)
+
+
+
+
+
+    # for file in files:
+    #     movie = Movie_MP4(file)
+    #     print(str(movie.getSize()))
+    #     during = movie.getDuringByRate(rate)
+    #     print(str(during))
+    #     record = record(os.path.split(file)[1], during)
+    #     record.startRecording()
+    #     movie.play()
+    #     time.sleep(during)
+    #     record.stopRecording()
+
+    print(time.time())
