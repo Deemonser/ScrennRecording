@@ -51,5 +51,7 @@ class Control:
 
 if __name__ == '__main__':
     rate = 1000000 / 1
-    control = Control(r'E:\pythonProject\Test', '.itcast', rate)
-    control.doAllTask()
+    # control = Control(r'E:\pythonProject\Test', '.itcast', rate)
+    # control.doAllTask()
+    move = Movie_MP4("")
+    move.getDuring()
