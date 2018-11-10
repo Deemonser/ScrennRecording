@@ -30,10 +30,11 @@ class Control:
         # 播放
         movie.play()
         movie.fullWindow()
-        # 延时录屏
-        time.sleep(self.delay)
         # 开启录屏
         record.startRecord()
+        # 延时录屏
+        time.sleep(self.delay)
+        movie.start()
         # 录屏中，等待
         time.sleep(during)
         # 停止录屏
