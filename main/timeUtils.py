@@ -6,7 +6,7 @@ def handleOcrTime(timeInfo):
         return t2s(timeInfo.split('/')[1])
     else:
         len = timeInfo.__len__()
-        return t2s(timeInfo[int(len / 2):len])
+        return t2s(timeInfo[int(len / 2):len][0])
 
 
 def t2s(t):
