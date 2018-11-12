@@ -4,11 +4,15 @@ import tkinter
 from tkinter import *
 from tkinter import filedialog
 from PIL import Image, ImageTk
-
+import json
 from main.Control import Control
+from main.data import settingBean
 
 
 class mainActivity:
+
+    def __init__(self):
+        settingBean.getSettingData()
 
     def show(self):
         self.isStart = False
