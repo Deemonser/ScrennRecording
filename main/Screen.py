@@ -2,17 +2,22 @@ import pyautogui
 import time
 
 
-def getPosition(image):
-    return pyautogui.center(getLocateOnScreen(image))
+def findImage():
+    print("findImage....")
 
 
-def getLocateOnScreen(image):
+def getPosition(image, function=findImage):
+    return pyautogui.center(getLocateOnScreen(image, function))
+
+
+def getLocateOnScreen(image, function=findImage):
     screen = pyautogui.locateOnScreen(image)
     if not screen is None:
         return screen
     else:
-        time.sleep(0.1)
+        time.sleep(0.5)
         pyautogui.moveRel(10, 10)
+        function()
         return getLocateOnScreen(image)
 
 

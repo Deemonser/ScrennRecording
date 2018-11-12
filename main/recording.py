@@ -16,15 +16,12 @@ class Record:
     def prepare(self, during):
         self.during = during
 
-        os.startfile(r'C:\Program Files (x86)\EVCapture\EVCapture.exe')
-        time.sleep(1)
-        pyautogui.hotkey("ctrl", "f3")
-        self.hideWindow()
-
+        self.lunch()
         print("record save path: %s" % (self.path))
+
         if not os.path.exists(self.path):
             os.makedirs(self.path)
-            self.changePath()
+        self.changePath()
 
     def isExit(self):
         return os.path.exists(os.path.join(self.path, self.fileName))
@@ -35,7 +32,7 @@ class Record:
 
     def stopRecord(self):
         pyautogui.hotkey("ctrl", "f2")
-        time.sleep(2)
+        time.sleep(1)
         pyperclip.copy(self.fileName)
         pyautogui.hotkey("ctrl", "v")
         time.sleep(1)
@@ -44,14 +41,19 @@ class Record:
         pyautogui.press("enter")
         print("stopRecord")
 
+    def lunch(self):
+        os.startfile(r'C:\Program Files (x86)\EVCapture\EVCapture.exe')
+        time.sleep(1)
+        pyautogui.hotkey("ctrl", "f3")
+        time.sleep(0.5)
+
     def hideWindow(self):
-        position = Screen.getPosition("./image/mini_recording.png")
+        position = Screen.getPosition("./image/mini_recording.png", self.lunch())
         pyautogui.click(position)
-        pyautogui.moveRel(-20, None)
+        pyautogui.moveRel(-30, None)
 
     def changePath(self):
-        pyautogui.hotkey("ctrl", "f3")
-        pyautogui.click(Screen.getPosition("./image/record_setting.png"))
+        pyautogui.click(Screen.getPosition("./image/record_setting.png"), self.lunch())
         x, y = Screen.getPosition("./image/record_setting_normal.png")
         pyautogui.click(x, y + 36)
         pyautogui.click(Screen.getPosition("./image/record_setting_change.png"))
@@ -65,10 +67,7 @@ class Record:
         pyautogui.keyDown("shift")
         pyautogui.press("tab", 5)
         pyautogui.keyUp("shift")
-        time.sleep(0.5)
         pyautogui.press("enter")
-        time.sleep(0.5)
         x1, y1 = Screen.getPosition("./image/close_record_setting.png")
         pyautogui.click(x1 + 20, y1)
-        time.sleep(0.5)
         pyautogui.click(Screen.getPosition("./image/mini_recording.png"))
