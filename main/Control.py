@@ -16,8 +16,12 @@ class Control:
 
     def doAllTask(self):
         files = getFile(self.path, self.endName)
+        print("file count: %d" % (files.__len__()))
         print(files)
+        i = 0
         for file in files:
+            i = i + 1
+            print("current file: %d /  %d" % (i, files.__len__()))
             self.doSingleTask(file)
 
     def doSingleTask(self, file):
@@ -51,7 +55,7 @@ class Control:
 
 
 if __name__ == '__main__':
-    control = Control(r'F:\UI设计-基础班\【第1天】Photoshop基础\1-视频', '.itcast', 1.0)
+    control = Control(r'F:\UI设计-基础班', '.itcast', 1.0)
     control.doAllTask()
     #
     # timeInfo = '00:0126:35'

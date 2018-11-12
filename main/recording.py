@@ -17,6 +17,8 @@ class Record:
         self.during = during
 
         os.startfile(r'C:\Program Files (x86)\EVCapture\EVCapture.exe')
+        time.sleep(1)
+        pyautogui.hotkey("ctrl", "f3")
         self.hideWindow()
 
         print("record save path: %s" % (self.path))

@@ -46,7 +46,7 @@ class Video(object):
 
     def getDuring(self):
         timeInfo = ImageUtils.ocr(
-            image_to_bytes(screenshotByImage('./image/player_1/player_during.png', 15, -15, 150, 40)))
+            image_to_bytes(screenshotByImage('./image/player_1/player_during.png', 0, 0, 150, 40)))
         during = timeUtils.handleOcrTime(timeInfo['words_result'][0]['words'].split('/'))
         print(during)
         return during
@@ -56,7 +56,7 @@ class Video(object):
         print("start")
 
     def closeWindow(self):
-        pyautogui.hotkey("alt","f4")
+        pyautogui.hotkey("alt", "f4")
         # pyautogui.press("esc")
         # pyautogui.click(Screen.getPosition('./image/player_1/player_close.png'))
 
