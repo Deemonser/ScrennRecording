@@ -4,6 +4,8 @@ import requests
 
 import os, time
 import pyautogui
+from PIL import Image
+
 from main import Screen, ImageUtils, timeUtils
 from aip import AipOcr
 from main.ImageUtils import *

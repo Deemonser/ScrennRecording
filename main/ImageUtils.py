@@ -14,7 +14,7 @@ api = AipOcr(APP_ID, API_KEY, SECRET_KEY)
 
 
 def screenshotByImage(imagePath, offx, offy, width, height):
-    x, y = Screen.getPosition(imagePath)
+    x, y, w, h = Screen.getLocateOnScreen(imagePath)
     print("during position=%d , %d" % (x, y))
     return pyautogui.screenshot(region=(x + offx, y + offy, width, height))
 
