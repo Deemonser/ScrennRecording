@@ -16,8 +16,10 @@ def getLocateOnScreen(image, function=findImage):
         return screen
     else:
         time.sleep(0.5)
-        pyautogui.moveRel(10, 10)
-        function()
+        pyautogui.moveRel(20, 20)
+        if not function == None:
+            function()
+        print(image)
         return getLocateOnScreen(image)
 
 
