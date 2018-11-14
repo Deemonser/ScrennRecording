@@ -55,7 +55,7 @@ class Control:
 
 
 if __name__ == '__main__':
-    control = Control(r'F:\UI设计-基础班', '.itcast', 1.0)
+    control = Control(r'F:\UI设计-就业班', '.itcast', 1.0)
     control.doAllTask()
     #
     # timeInfo = '00:0126:35'

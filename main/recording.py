@@ -53,7 +53,7 @@ class Record:
         pyautogui.moveRel(160, None)
 
     def changePath(self):
-        pyautogui.click(Screen.getPosition("./image/record_setting.png"), self.lunch)
+        pyautogui.click(Screen.getPosition("./image/record_setting.png", self.lunch))
         x, y = Screen.getPosition("./image/record_setting_normal.png")
         pyautogui.click(x, y + 36)
         pyautogui.click(Screen.getPosition("./image/record_setting_change.png"))
