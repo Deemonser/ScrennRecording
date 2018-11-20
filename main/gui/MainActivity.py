@@ -12,7 +12,7 @@ from main.data import settingBean
 class mainActivity:
 
     def __init__(self):
-        settingBean.getSettingData()
+        settingBean.settingBean().getSettingData()
 
     def show(self):
         self.isStart = False

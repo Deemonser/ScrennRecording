@@ -1,25 +1,24 @@
+import sys
+
+import os
+
 import json
 
-setting = {
-    'path': r'c:\User\Deemons\Desktop',
-    'endName': r'.itcase',
-    'recordPath': r'C:\User\Deemons\Desktop\Evcapture.exe',
-    'duringImagePath': r'C:\User\Deemons\Desktop\Evcapture.exe',
-
-}
+sys.path.append(os.path.abspath(".") + "/InFile/")
 
 
-# 读取数据
-def getSettingData():
-    with open('setting.json', 'r') as f:
-        data = json.load(f)
-    if data == None:
-        data = setting
-        setSettingData(data)
-    return data
+class settingBean:
 
+    # 读取数据
+    def getSettingData(self):
+        print(os.getcwd())
+        with open(r'../data/setting.json', 'r') as f:
+            data = json.load(f)
+            f.close()
+        return data
 
-# 写入 JSON 数据
-def setSettingData(data):
-    with open('setting.json', 'w') as f:
-        json.dump(data, f)
+    # 写入 JSON 数据
+    def setSettingData(self, data):
+        with open('setting.json', 'w') as f:
+            json.dump(data, f)
+            f.close()

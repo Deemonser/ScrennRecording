@@ -22,4 +22,4 @@ def t2s(t):
 
 
 if __name__ == '__main__':
-    handleOcrTime("00:0102:36")
+    handleOcrTime("00:01/02:36")
