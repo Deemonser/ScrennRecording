@@ -1,12 +1,8 @@
+import pyperclip
+
 from main import timeUtils, ImageUtils
 from main.ImageUtils import image_to_bytes, screenshotByImage
-from main.Video import Movie_MP4
-from main.FileUtils import getFile
-from main.recording import Record
 from main.Screen import *
-import pyperclip
-import os
-import time
 
 
 class Control:
