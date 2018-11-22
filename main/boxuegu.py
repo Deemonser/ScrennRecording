@@ -14,23 +14,26 @@ class Control:
     def doSingleTask(self):
         #     视频停止播放
         self.stop()
-
         x, y = getPosition("./boxue_img/play_player.png")
+        pyautogui.press("left", 5, interval=0.1)
 
         #     找视频的名称
-        fileName = self.getFileName()
+        fileName = self.getFatherName() + "_" + self.getChildName() + "_" + self.getFileName()
+        print(fileName)
+        pyperclip.copy(fileName)
+        pyautogui.moveTo(x, y)
 
         #     查找视频时长
         during = self.getDuring() - 1
-        pyperclip.copy(fileName)
         #     全屏
         # pyautogui.click(getPosition("./boxue_img/full_player.png"))
         # pyautogui.moveTo(500, 500)
 
         #     播放及录制
-        pyautogui.hotkey("ctrl", "f4")
+        pyautogui.hotkey("ctrl", "f4", during=0.2)
         time.sleep(1)
-        pyautogui.click(x, y)
+        pyautogui.click(x, y, duration=0.3)
+        time.sleep(0.5)
         pyautogui.moveRel(None, -500)
 
         #     休眠
@@ -40,9 +43,9 @@ class Control:
         # getPosition("./boxue_img/player_end.png")
 
         #     停止录屏，及保存
-        pyautogui.hotkey("ctrl", "f2")
-        time.sleep(0.5)
-        pyautogui.hotkey("ctrl", "v")
+        pyautogui.hotkey("ctrl", "f2", during=0.2)
+        time.sleep(1)
+        pyautogui.hotkey("ctrl", "v", during=0.2)
         time.sleep(0.2)
         pyautogui.press("enter")
 
@@ -53,33 +56,60 @@ class Control:
         self.doSingleTask()
 
     def find_next(self):
+        print("find_next")
         if self.i > 10:
-            result = pyautogui.locateAllOnScreen('./next.png')
+            result = pyautogui.locateAllOnScreen("./boxue_img/next.png")
             if not result is None:
                 pyautogui.click(pyautogui.center(result))
                 self.i = 0
 
     def stop(self):
         self.i = 0
-        pyautogui.click(getPosition("./boxue_img/stop_player.png"), self.find_next())
+        pyautogui.click(getPosition("./boxue_img/stop_player.png", self.find_next), duration=0.2)
         print("click stop")
         pyautogui.moveRel(None, -300)
 
     def getDuring(self):
         print("getDuring")
         timeInfo = ImageUtils.ocr(
-            image_to_bytes(screenshotByImage("./boxue_img/play_player.png", 55, 0, 45, 26)))
+            image_to_bytes(screenshotByImage("./boxue_img/play_player.png", 60, 0, 45, 26)))
         during = timeUtils.t2s(timeInfo['words_result'][0]['words'])
         print(during)
         return during
 
     def getFileName(self):
-        print("getFileName")
-        timeInfo = ImageUtils.ocr(
-            image_to_bytes(screenshotByImage("./boxue_img/file_name.png", 0, 0, 200, 25)))
-        fileName = timeInfo['words_result'][0]['words']
+        x, y = getPosition("./boxue_img/file_name.png")
+        pyautogui.mouseDown(x, y)
+        pyautogui.moveRel(250, None)
+        pyautogui.hotkey("ctrl", "c")
+        pyautogui.moveRel(20, None)
+        pyautogui.mouseUp()
+        pyautogui.click(1800, 885)
+        fileName = pyperclip.paste()
         print(fileName)
         return fileName
+
+    def getChildName(self):
+        x, y = getPosition("./boxue_img/child_name.png")
+        pyautogui.mouseDown(x - 260, y)
+        pyautogui.moveRel(270, None)
+        pyautogui.hotkey("ctrl", "c")
+        pyautogui.moveRel(20, None)
+        pyautogui.mouseUp()
+        pyautogui.click(1800, 885)
+        childName = pyperclip.paste()
+        print(childName)
+        return childName
+
+    def getFatherName(self):
+        x, y = getPosition("./boxue_img/father_name.png")
+        pyautogui.mouseDown(x - 30, y + 50)
+        pyautogui.moveRel(270, None)
+        pyautogui.hotkey("ctrl", "c")
+        pyautogui.mouseUp()
+        fatherName = pyperclip.paste()
+        print(fatherName)
+        return fatherName
 
     def hideWindow(self):
         position = getPosition("./boxue_img/small.png")
