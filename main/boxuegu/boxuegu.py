@@ -57,8 +57,8 @@ class Control:
 
     def find_next(self):
         self.i = self.i + 1
+        print("find count:" + str(self.i))
         if self.i > 10:
-            print("find_next")
             result = pyautogui.locateOnScreen("./boxue_img/next.png")
             if not result is None:
                 pyautogui.click(pyautogui.center(result), duration=0.2)
