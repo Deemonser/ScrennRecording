@@ -11,6 +11,7 @@ import time
 class Control:
 
     def doSingleTask(self):
+        self.i = 0
         #     视频停止播放
         self.stop()
         x, y = getPosition("./boxue_img/play_player.png")
@@ -31,7 +32,7 @@ class Control:
         #     播放及录制
         pyautogui.hotkey("ctrl", "f4", during=0.2)
         time.sleep(1)
-        pyautogui.click(x, y, duration=0.3)
+        pyautogui.click(x, y, duration=0.2)
         time.sleep(0.5)
         pyautogui.moveRel(None, -500)
 
@@ -55,15 +56,15 @@ class Control:
         self.doSingleTask()
 
     def find_next(self):
-        print("find_next")
+        self.i = self.i + 1
         if self.i > 10:
-            result = pyautogui.locateAllOnScreen("./boxue_img/next.png")
+            print("find_next")
+            result = pyautogui.locateOnScreen("./boxue_img/next.png")
             if not result is None:
-                pyautogui.click(pyautogui.center(result))
+                pyautogui.click(pyautogui.center(result), duration=0.2)
                 self.i = 0
 
     def stop(self):
-        self.i = 0
         pyautogui.click(getPosition("./boxue_img/stop_player.png", self.find_next), duration=0.2)
         print("click stop")
         pyautogui.moveRel(None, -300)
