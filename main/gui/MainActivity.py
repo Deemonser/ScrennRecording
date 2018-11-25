@@ -4,7 +4,7 @@ import tkinter
 from tkinter import *
 from tkinter import filedialog
 from PIL import Image, ImageTk
-import json
+
 from main.Control import Control
 from main.data import settingBean
 

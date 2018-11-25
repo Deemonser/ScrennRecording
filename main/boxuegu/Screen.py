@@ -1,10 +1,8 @@
 import pyautogui
 import time
 
-
 def findImage():
     print("findImage....")
-
 
 def getPosition(image, function=findImage):
     return pyautogui.center(getLocateOnScreen(image, function))
@@ -22,7 +20,3 @@ def getLocateOnScreen(image, function=findImage):
         print(image)
         return getLocateOnScreen(image)
 
-
-if __name__ == '__main__':
-    print(getLocateOnScreen(r'E:\pythonProject\Test\main\gui\xunhuan.png'))
-    print(getPosition(r'E:\pythonProject\Test\main\gui\xunhuan.png'))
