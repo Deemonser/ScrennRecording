@@ -1,8 +1,11 @@
-import pyperclip
+import os
+import sys
 
-from main import timeUtils, ImageUtils
-from main.ImageUtils import image_to_bytes, screenshotByImage
-from main.Screen import *
+import pyperclip
+import pyautogui
+from Screen import getPosition
+import timeUtils, ImageUtils
+import time
 
 
 class Control:
@@ -54,8 +57,8 @@ class Control:
 
     def find_next(self):
         self.i = self.i + 1
+        print("find count:" + str(self.i))
         if self.i > 10:
-            print("find_next")
             result = pyautogui.locateOnScreen("./boxue_img/next.png")
             if not result is None:
                 pyautogui.click(pyautogui.center(result), duration=0.2)
@@ -69,7 +72,7 @@ class Control:
     def getDuring(self):
         print("getDuring")
         timeInfo = ImageUtils.ocr(
-            image_to_bytes(screenshotByImage("./boxue_img/play_player.png", 60, 0, 45, 26)))
+            ImageUtils.image_to_bytes(ImageUtils.screenshotByImage("./boxue_img/play_player.png", 60, 0, 45, 26)))
         during = timeUtils.t2s(timeInfo['words_result'][0]['words'])
         print(during)
         return during
@@ -115,8 +118,9 @@ class Control:
 
 
 if __name__ == '__main__':
-    control = Control()
-    control.doSingleTask()
-    #
-    # timeInfo = '00:0126:35'
-    # print(timeUtils.handleOcrTime(timeInfo))
+    try:
+        Control().doSingleTask()
+    except:
+        print("Unexpected error:", sys.exc_info())  # sys.exc_info()返回出错信息
+
+    os.system("pause")

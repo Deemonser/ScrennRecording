@@ -34,7 +34,7 @@ class Control:
         # 播放
         movie.play()
         movie.fullWindow()
-        during = movie.getDuring()
+        during = movie.getDuring() * 0.9942
         print("during=%s" % (str(during)))
         movie.prepare()
 
