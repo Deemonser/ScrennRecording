@@ -19,3 +19,11 @@ def searchFile(fileList, path, text):
                 fileList.append(fl)
     except Exception:
         ""
+
+
+def getOtherFilePath(filePath, otherFileName):
+    path = os.path.join(os.path.dirname(os.path.dirname(filePath)), otherFileName)
+    if not os.path.exists(path):
+        os.makedirs(path)
+    srcName = os.path.split(filePath)[1]
+    return path, srcName

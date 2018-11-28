@@ -14,8 +14,8 @@ class Control:
         self.i = 0
         #     视频停止播放
         self.stop()
-        x, y = getPosition("./boxue_img/play_player.png")
-        pyautogui.press("left", 5, interval=0.1)
+        x, y = getPosition("./boxue_img/play_player.png", self.stop)
+        pyautogui.press("left", 6, interval=0.1)
 
         #     找视频的名称
         fileName = self.getFatherName() + "_" + self.getChildName() + "_" + self.getFileName()
@@ -28,6 +28,13 @@ class Control:
         #     全屏
         # pyautogui.click(getPosition("./boxue_img/full_player.png"))
         # pyautogui.moveTo(500, 500)
+
+        # os.startfile(r'C:\Program Files (x86)\EVCapture\EVCapture.exe')
+        # time.sleep(1)
+        # pyautogui.hotkey("ctrl", "f3")
+        # time.sleep(0.5)
+        # self.hideWindow()
+
 
         #     播放及录制
         pyautogui.hotkey("ctrl", "f4", during=0.2)
@@ -65,7 +72,9 @@ class Control:
                 self.i = 0
 
     def stop(self):
-        pyautogui.click(getPosition("./boxue_img/stop_player.png", self.find_next), duration=0.2)
+        position = getPosition("./boxue_img/stop_player.png", self.find_next)
+        time.sleep(0.5)
+        pyautogui.click(position, duration=0.2)
         print("click stop")
         pyautogui.moveRel(None, -300)
 
