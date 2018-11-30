@@ -1,8 +1,6 @@
-from main import timeUtils
-from main.Video import Movie_MP4
-from main.FileUtils import getFile
-from main.recording import Record
-import os
+from Player import Movie_MP4
+from FileUtils import getFile
+from recording import Record
 import time
 
 

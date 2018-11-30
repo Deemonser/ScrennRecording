@@ -3,7 +3,7 @@ import time, os
 
 import pyautogui
 import pyperclip
-from main import Screen
+import Locate
 
 
 class Record:
@@ -42,23 +42,23 @@ class Record:
         print("stopRecord")
 
     def lunch(self):
-        os.startfile(r'C:\Program Files (x86)\EVCapture\EVCapture.exe')
+        os.startfile('./EVCapture')
         time.sleep(1)
         pyautogui.hotkey("ctrl", "f3")
         time.sleep(0.5)
 
     def hideWindow(self):
-        position = Screen.getPosition("./image/mini_recording.png", self.lunch)
+        position = Locate.getPosition("./img/recorder_mini.png", self.lunch)
         pyautogui.click(position)
         pyautogui.moveRel(160, None)
 
     def changePath(self):
-        pyautogui.click(Screen.getPosition("./image/record_setting.png", self.lunch))
-        x, y = Screen.getPosition("./image/record_setting_normal.png")
+        pyautogui.click(Locate.getPosition("./img/recorder_setting.png", self.lunch))
+        x, y = Locate.getPosition("./img/recorder_setting_with_text.png")
         pyautogui.click(x, y + 36)
-        pyautogui.click(Screen.getPosition("./image/record_setting_change.png"))
+        pyautogui.click(Locate.getPosition("./img/recorder_setting_change.png"))
         time.sleep(0.5)
-        pyautogui.click(Screen.getPosition("./image/choose_path.png"))
+        pyautogui.click(Locate.getPosition("./img/recorder_choose_path.png"))
         time.sleep(0.5)
         pyperclip.copy(self.path)
         pyautogui.hotkey("ctrl", "v")
@@ -68,6 +68,6 @@ class Record:
         pyautogui.press("tab", 5)
         pyautogui.keyUp("shift")
         pyautogui.press("enter")
-        x1, y1 = Screen.getPosition("./image/close_record_setting.png")
+        x1, y1 = Locate.getPosition("./img/recorder_close_setting.png")
         pyautogui.click(x1 + 20, y1)
-        pyautogui.click(Screen.getPosition("./image/mini_recording.png"))
+        pyautogui.click(Locate.getPosition("./img/recorder_mini.png"))

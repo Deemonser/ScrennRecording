@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e13dfc-347b-4d26-8a44-adb43ae9d6e1" name="Default Changelist" comment="">
-<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/main/new_heima/FileUtils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/new_heima/img/recorder_choose_path.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/new_heima/img/recorder_close_setting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/new_heima/img/recorder_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/new_heima/img/recorder_seting_with_text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/new_heima/img/recorder_setting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/new_heima/img/recorder_setting_change.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ignore" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/filter/01-PS and AI.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/filter/test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/filter/Filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/filter/Filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/filter/test_copy.avi" beforeDir="false" afterPath="$PROJECT_DIR$/main/filter/test_copy.avi" afterDir="false" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
+      <change beforePath="$PROJECT_DIR$/main/new_heima/Control.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/new_heima/Control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/new_heima/ImageUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/new_heima/ImageUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/new_heima/Screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/new_heima/Locate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/new_heima/Video.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/new_heima/Player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/new_heima/recording.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/new_heima/recording.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,50 +28,42 @@
     <session id="1807110142">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ignore" value="1" />
-          <entry key="png" value="3" />
-          <entry key="py" value="21" />
+          <entry key="png" value="16" />
+          <entry key="py" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="3" />
+          <entry key="Image" value="16" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="21" />
+          <entry key="Python" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="7" />
-<<<<<<< HEAD
-          <entry key="ignore" value="20" />
-          <entry key="py" value="3176" />
-=======
-          <entry key="py" value="3465" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
-          <entry key="txt" value="29" />
+          <entry key="dummy" value="19" />
+          <entry key="ignore" value="2" />
+          <entry key="py" value="3567" />
+          <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-<<<<<<< HEAD
-          <entry key="PLAIN_TEXT" value="56" />
-          <entry key="Python" value="3176" />
-=======
-          <entry key="PLAIN_TEXT" value="36" />
-          <entry key="Python" value="3465" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
+          <entry key="PLAIN_TEXT" value="53" />
+          <entry key="Python" value="3567" />
         </counts>
       </usages-collector>
     </session>
@@ -74,38 +71,72 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/CatchUsbVideo.py">
+        <entry file="file://$PROJECT_DIR$/main/new_heima/Control.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state>
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-=======
-            <state relative-caret-position="68">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="511">
+              <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/Screen.py">
+        <entry file="file://$PROJECT_DIR$/main/new_heima/FileUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="120">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-=======
-            <state relative-caret-position="476">
-              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/new_heima/ImageUtils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/new_heima/Locate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
-                <marker date="1542892769000" expanded="true" signature="47:77" ph="..." />
-                <marker date="1542892769000" expanded="true" signature="236:237" ph="..." />
-                <marker date="1542892769000" expanded="true" signature="525:526" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/new_heima/timeUtils.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/new_heima/Player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="633">
+              <caret line="47" column="56" lean-forward="true" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+              <folding>
+                <element signature="e#48#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/FileUtils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -113,122 +144,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/ImageUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="225">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-=======
-            <state relative-caret-position="391">
-              <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="19" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1542038725000" expanded="true" signature="323:324" ph="..." />
-                <marker date="1542038725000" expanded="true" signature="883:929" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/Video.py">
+        <entry file="file://$PROJECT_DIR$/main/boxuegu/ImageUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="587">
-              <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/timeUtils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="238">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
-                <marker date="1542728483000" expanded="true" signature="31:32" ph="..." />
-                <marker date="1542728483000" expanded="true" signature="31:110" ph="..." />
-                <marker date="1542728483000" expanded="true" signature="31:205" ph="..." />
-=======
-            <state relative-caret-position="198">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-                <marker date="1542970502000" expanded="true" signature="2013:2460" ph="..." />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/Control.py">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="720">
-              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-=======
-            <state relative-caret-position="4590">
-              <caret line="270" column="17" selection-start-line="270" selection-start-column="17" selection-end-line="270" selection-end-column="17" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/recording.py">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="660">
-              <caret line="49" selection-start-line="49" selection-end-line="52" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-=======
-            <state relative-caret-position="221">
-              <caret line="822" column="12" selection-start-line="822" selection-start-column="12" selection-end-line="822" selection-end-column="12" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/boxuegu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-                <marker date="1542935951000" expanded="true" signature="163:167" ph="..." />
-                <marker date="1542935951000" expanded="true" signature="2595:3286" ph="..." />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.ignore">
+        <entry file="file://$PROJECT_DIR$/main/new_heima/recording.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="15">
-              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-=======
-            <state relative-caret-position="1989">
-              <caret line="117" column="4" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda/anaconda3/python.app/Contents/lib/python3.6/site-packages/pyscreeze/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="193">
-              <caret line="280" column="4" selection-start-line="280" selection-start-column="4" selection-end-line="280" selection-end-column="4" />
-=======
-            <state relative-caret-position="884">
-              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -244,9 +188,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>find_next</find>
-      <find>持续集成与容器管理</find>
+      <find>Screen</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Locate</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -262,25 +208,33 @@
         <option value="$PROJECT_DIR$/main/recording.py" />
         <option value="$PROJECT_DIR$/main/Control.py" />
         <option value="$PROJECT_DIR$/main/video/cv3.py" />
+        <option value="$PROJECT_DIR$/main/boxuegu.py" />
         <option value="$PROJECT_DIR$/main/record/ScreenRecord.py" />
         <option value="$PROJECT_DIR$/main/filter/Filter.py" />
-        <option value="$PROJECT_DIR$/main/Screen.py" />
-        <option value="$PROJECT_DIR$/main/boxuegu.py" />
         <option value="$PROJECT_DIR$/.ignore" />
+        <option value="$PROJECT_DIR$/main/new_heima/Control.py" />
+        <option value="$PROJECT_DIR$/main/new_heima/Video.py" />
+        <option value="$PROJECT_DIR$/main/new_heima/ImageUtils.py" />
+        <option value="$PROJECT_DIR$/main/new_heima/recording.py" />
+        <option value="$PROJECT_DIR$/main/new_heima/Player.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="24" />
-    <option name="y" value="58" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="4" />
+    <option name="y" value="23" />
     <option name="width" value="1916" />
     <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,7 +251,26 @@
               <item name="ScrennRecording" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScrennRecording" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="boxue_img" type="462c0819:PsiDirectoryNode" />
+              <item name="boxuegu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrennRecording" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrennRecording" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrennRecording" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrennRecording" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="new_heima" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrennRecording" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrennRecording" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="new_heima" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ScrennRecording" type="b2602c69:ProjectViewProjectNode" />
@@ -308,22 +281,19 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-<<<<<<< HEAD
-      <recent name="$PROJECT_DIR$/main/boxue_img" />
-=======
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/new_heima/img" />
+      <recent name="$PROJECT_DIR$/main/new_heima" />
       <recent name="$PROJECT_DIR$/main/filter" />
       <recent name="$PROJECT_DIR$/main/video" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/filter" />
       <recent name="$PROJECT_DIR$/main/video" />
     </key>
@@ -342,7 +312,15 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-<<<<<<< HEAD
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.DS_Store</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/Test.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/.DS_Store</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/Control.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/FileUtils.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/Screen.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/filter/Filter.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/gui/MainActivity.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -350,6 +328,47 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.ignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/__pycache__/Control.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/__pycache__/FileUtils.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/__pycache__/ImageUtils.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/__pycache__/Screen.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/__pycache__/Video.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/__pycache__/recording.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/__pycache__/timeUtils.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/ImageUtils.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/Screen.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/__main__.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/boxue_img/child_name.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/boxue_img/father_name.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/boxue_img/file_name.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/boxue_img/next.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/boxue_img/play_player.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/boxue_img/small.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/boxue_img/stop_player.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/boxuegu.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/dist/boxue_img/child_name.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/dist/boxue_img/father_name.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/dist/boxue_img/file_name.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/dist/boxue_img/next.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/dist/boxue_img/play_player.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/dist/boxue_img/small.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/dist/boxue_img/stop_player.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu/timeUtils.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/data/__pycache__/settingBean.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/filter/01-PSandAI.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/image/.DS_Store</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/Control.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/ImageUtils.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/Screen.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/Video.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/__init__.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/img/player_close.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/img/player_during.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/img/player_full.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/img/player_play.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/recording.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/new_heima/timeUtils.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -357,777 +376,19 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/CatchUsbVideo.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/child_name.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/father_name.png</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/file_name.png</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/next.png</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/play_player.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/small.png</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/stop_player.png</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu.py</PATH>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-=======
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-<<<<<<< HEAD
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/child_name.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/father_name.png</PATH>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-=======
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/vedio/01-PS and AI.mp4</PATH>
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-<<<<<<< HEAD
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/finish.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/full_player.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxue_img/player_end.png</PATH>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-=======
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/PKG-INFO</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/SOURCES.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/dependency_links.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/entry_points.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/not-zip-safe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/requires.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/top_level.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/__main__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/basecommand.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/baseparser.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/build_env.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/cache.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/cmdoptions.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/check.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/completion.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/configuration.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/download.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/freeze.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/hash.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/help.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/install.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/list.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/search.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/show.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/uninstall.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/wheel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/compat.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/configuration.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/download.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/exceptions.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/index.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/locations.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/models/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/models/index.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/check.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/freeze.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/prepare.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/pep425tags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_file.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_install.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_set.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_uninstall.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/resolve.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/status_codes.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/appdirs.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/deprecation.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/encoding.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/filesystem.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/glibc.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/hashes.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/logging.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/misc.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/outdated.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/packaging.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/setuptools_build.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/temp_dir.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/typing.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/ui.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/bazaar.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/git.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/mercurial.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/subversion.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/wheel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/appdirs.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/_cmd.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/adapter.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/cache.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/caches/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/caches/file_cache.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/caches/redis_cache.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/compat.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/controller.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/filewrapper.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/heuristics.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/serialize.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/wrapper.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/__main__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/cacert.pem</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/core.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/big5freq.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/big5prober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/chardistribution.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/charsetgroupprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/charsetprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/cli/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/cli/chardetect.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/codingstatemachine.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/compat.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/cp949prober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/enums.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/escprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/escsm.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/eucjpprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euckrfreq.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euckrprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euctwfreq.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euctwprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/gb2312freq.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/gb2312prober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/hebrewprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/jisfreq.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/jpcntx.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langbulgarianmodel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langcyrillicmodel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langgreekmodel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langhebrewmodel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langhungarianmodel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langthaimodel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langturkishmodel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/latin1prober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/mbcharsetprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/mbcsgroupprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/mbcssm.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/sbcharsetprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/sbcsgroupprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/sjisprober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/universaldetector.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/utf8prober.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/version.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/ansi.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/ansitowin32.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/initialise.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/win32.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/winterm.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/misc.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/shutil.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/sysconfig.cfg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/sysconfig.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/tarfile.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/compat.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/database.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/index.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/locators.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/manifest.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/markers.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/metadata.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/resources.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/scripts.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/t32.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/t64.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/util.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/version.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/w32.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/w64.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/wheel.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distro.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_ihatexml.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_inputstream.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_tokenizer.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/_base.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/datrie.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/py.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_utils.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/constants.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/base.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/inject_meta_charset.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/lint.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/optionaltags.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/sanitizer.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/whitespace.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/html5parser.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/serializer.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treeadapters/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treeadapters/genshi.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treeadapters/sax.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/base.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/dom.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/etree.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/base.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/dom.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/etree.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/genshi.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/codec.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/compat.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/core.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/idnadata.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/intranges.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/package_data.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/uts46data.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/ipaddress.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/linklockfile.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/mkdirlockfile.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/pidlockfile.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/sqlitelockfile.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/symlinklockfile.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/_version.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/exceptions.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/fallback.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/__about__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/_compat.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/_structures.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/markers.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/requirements.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/specifiers.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/utils.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/version.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pkg_resources/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pkg_resources/py31compat.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/bar.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/counter.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/helpers.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/spinner.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pyparsing.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/core.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/parser.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/writer.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/__version__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/_internal_utils.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/adapters.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/api.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/auth.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/certs.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/compat.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/cookies.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/exceptions.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/help.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/hooks.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/models.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/packages.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/sessions.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/status_codes.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/structures.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/utils.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/retrying.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/six.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/_collections.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/connection.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/connectionpool.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/bindings.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/appengine.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/ntlmpool.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/pyopenssl.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/securetransport.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/socks.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/exceptions.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/fields.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/filepost.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/backports/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/backports/makefile.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/ordered_dict.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/six.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/poolmanager.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/request.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/response.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/connection.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/request.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/response.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/retry.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/selectors.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/ssl_.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/timeout.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/url.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/wait.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/labels.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/mklabels.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/tests.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/x_user_defined.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput-1.4.dist-info/DESCRIPTION.rst</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput-1.4.dist-info/INSTALLER</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput-1.4.dist-info/METADATA</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput-1.4.dist-info/RECORD</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput-1.4.dist-info/WHEEL</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput-1.4.dist-info/metadata.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput-1.4.dist-info/pbr.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput-1.4.dist-info/top_level.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput-1.4.dist-info/zip-safe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/_info.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/_util/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/_util/darwin.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/_util/win32.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/_util/win32_vks.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/_util/xorg.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/_util/xorg_keysyms.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/keyboard/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/keyboard/_base.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/keyboard/_darwin.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/keyboard/_win32.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/keyboard/_xorg.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/mouse/__init__.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/mouse/_base.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/mouse/_darwin.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/mouse/_win32.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/pynput/mouse/_xorg.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/setuptools-39.1.0-py3.7.egg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/setuptools.pth</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/six-1.11.0.dist-info/DESCRIPTION.rst</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/six-1.11.0.dist-info/INSTALLER</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/six-1.11.0.dist-info/METADATA</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/six-1.11.0.dist-info/RECORD</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/six-1.11.0.dist-info/WHEEL</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/six-1.11.0.dist-info/metadata.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/six-1.11.0.dist-info/top_level.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/six.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/tcl8.6/init.tcl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/Activate.ps1</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_asyncio.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_bz2.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_contextvars.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_ctypes.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_ctypes_test.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_decimal.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_distutils_findvs.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_elementtree.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_hashlib.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_lzma.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_msi.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_multiprocessing.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_overlapped.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_queue.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_socket.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_sqlite3.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_ssl.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_testbuffer.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_testcapi.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_testconsole.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_testimportmultiple.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_testmultiphase.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/_tkinter.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/activate</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/activate.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-console-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-datetime-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-debug-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-errorhandling-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-file-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-file-l1-2-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-file-l2-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-handle-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-heap-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-interlocked-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-libraryloader-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-localization-l1-2-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-memory-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-namedpipe-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-processenvironment-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-processthreads-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-processthreads-l1-1-1.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-profile-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-rtlsupport-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-string-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-synch-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-synch-l1-2-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-sysinfo-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-timezone-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-core-util-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-conio-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-convert-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-environment-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-filesystem-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-heap-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-locale-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-math-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-multibyte-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-private-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-process-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-runtime-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-stdio-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-string-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-time-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/api-ms-win-crt-utility-l1-1-0.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/concrt140.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/deactivate.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/easy_install-3.7-script.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/easy_install-3.7.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/easy_install-script.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/easy_install.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/libcrypto-1_1-x64.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/libssl-1_1-x64.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/msvcp140.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/msvcp140_1.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/msvcp140_2.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/pip-script.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/pip.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/pip3-script.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/pip3.7-script.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/pip3.7.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/pip3.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/pyexpat.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/python.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/python3.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/python37.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/pythonw.exe</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/select.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/sqlite3.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/tcl86t.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/tk86t.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/ucrtbase.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/unicodedata.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/vccorlib140.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/vcomp140.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/vcruntime140.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/winsound.pyd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/xlwings32-0.11.8.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/xlwings64-0.11.8.dll</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/pip-selfcheck.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/pyvenv.cfg</PATH>
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/boxuegu.spec</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/filter/01-PS and AI.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/filter/test.avi</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main/filter/test_copy.avi</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -1135,41 +396,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="RESTORED" />
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" />
-            <option name="myStatusName" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" />
-          </FILE-GROUP>
         </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
@@ -1178,41 +404,6 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="MODIFIED" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
         <option name="myUpdateName" value="Skipped" />
@@ -1220,41 +411,6 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="SKIPPED" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
         <option name="myUpdateName" value="Merged with conflicts" />
@@ -1262,41 +418,6 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
         <option name="myUpdateName" value="Merged with tree conflicts" />
@@ -1304,41 +425,6 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
         <option name="myUpdateName" value="Merged with property conflicts" />
@@ -1346,41 +432,6 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
         <option name="myUpdateName" value="Merged" />
@@ -1388,41 +439,6 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="MERGED" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
         <option name="myUpdateName" value="Not in repository" />
@@ -1430,41 +446,6 @@
         <option name="mySupportsDeletion" value="true" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="UNKNOWN" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
         <option name="myUpdateName" value="Locally added" />
@@ -1472,41 +453,6 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="LOCALLY_ADDED" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
         <option name="myUpdateName" value="Locally removed" />
@@ -1514,41 +460,6 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="LOCALLY_REMOVED" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
       <FILE-GROUP>
         <option name="myUpdateName" value="Switched" />
@@ -1556,41 +467,6 @@
         <option name="mySupportsDeletion" value="false" />
         <option name="myCanBeAbsent" value="false" />
         <option name="myId" value="SWITCHED" />
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" />
-          <option name="myStatusName" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" />
-        </FILE-GROUP>
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
@@ -1606,7 +482,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.boxuegu">
+  <component name="RunManager" selected="Python.Filter">
     <configuration name="Filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1670,27 +546,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="boxuegu" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/boxuegu.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="cv3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1712,20 +567,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/Video.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Python.utils" />
       <item itemvalue="Python.MainActivity" />
       <item itemvalue="Python.cv3" />
       <item itemvalue="Python.ScreenRecord" />
       <item itemvalue="Python.Filter" />
-      <item itemvalue="Python.boxuegu" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.boxuegu" />
         <item itemvalue="Python.Filter" />
         <item itemvalue="Python.ScreenRecord" />
         <item itemvalue="Python.cv3" />
         <item itemvalue="Python.MainActivity" />
+        <item itemvalue="Python.utils" />
       </list>
     </recent_temporary>
   </component>
@@ -1768,38 +644,32 @@
       <option name="project" value="LOCAL" />
       <updated>1542797627398</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="python 完善">
+      <created>1542970596870</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1542970596871</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="247" y="55" width="1400" height="1000" extended-state="0" />
-=======
-    <frame x="112" y="117" width="1916" height="1057" extended-state="0" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21484992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29515418" />
-=======
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27564767" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27564767" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32929516" />
-=======
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32953367" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32953367" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1841,7 +711,8 @@
     <MESSAGE value="分类" />
     <MESSAGE value="调整数据" />
     <MESSAGE value="python 录屏" />
-    <option name="LAST_COMMIT_MESSAGE" value="python 录屏" />
+    <MESSAGE value="python 完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="python 完善" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main/gui/xunhuan.png">
@@ -1849,8 +720,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/Video.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="153">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1868,32 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/FileUtils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/cv2/__init__.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pynput/mouse/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/main/recording.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="49" selection-start-line="49" selection-end-line="52" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pyscreeze/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/main/Control.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-=======
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1928,7 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="123" selection-start-line="123" selection-end-line="123" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
         </state>
       </provider>
     </entry>
@@ -1936,8 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="9" selection-end-column="25" />
-<<<<<<< HEAD
-=======
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -1963,7 +805,6 @@
             <marker date="1542876885000" expanded="true" signature="149:595" ph="..." />
             <marker date="1542876885000" expanded="true" signature="1200:1201" ph="..." />
           </folding>
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
         </state>
       </provider>
     </entry>
@@ -1974,28 +815,13 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/1357734382/time.py" />
-    <entry file="file://$PROJECT_DIR$/main/record/ScreenRecord.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/1357734382/cv2/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        <state relative-caret-position="13753">
+          <caret line="822" column="12" selection-start-line="822" selection-start-column="12" selection-end-line="822" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/1357734382/cv2/cv2/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/main/image/test.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/video/test.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/multiprocessing/process.py" />
-    <entry file="file://$PROJECT_DIR$/main/filter/Filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-=======
     <entry file="file://$PROJECT_DIR$/main/Screen.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -2017,58 +843,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/1357734382/cv2/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="822" column="12" selection-start-line="822" selection-start-column="12" selection-end-line="822" selection-end-column="12" />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/anaconda3/python.app/Contents/lib/python3.6/site-packages/pyscreeze/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="193">
-          <caret line="280" column="4" selection-start-line="280" selection-start-column="4" selection-end-line="280" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/Screen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-            <marker date="1542892769000" expanded="true" signature="47:77" ph="..." />
-            <marker date="1542892769000" expanded="true" signature="236:237" ph="..." />
-            <marker date="1542892769000" expanded="true" signature="525:526" ph="..." />
-=======
-        <state relative-caret-position="198">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-            <marker date="1542970502000" expanded="true" signature="2013:2460" ph="..." />
->>>>>>> f5459da0210924e72feda0a31576cc93ecab80bb
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/boxuegu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-            <marker date="1542935951000" expanded="true" signature="163:167" ph="..." />
-            <marker date="1542935951000" expanded="true" signature="2595:3286" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.ignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/filter/Filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3277">
+          <caret line="214" column="15" lean-forward="true" selection-start-line="214" selection-start-column="15" selection-end-line="214" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pyautogui/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/boxuegu/timeUtils.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/img/player_close.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/img/player_during.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/image/record_seting_normal.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/image/record_setting_change.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/image/record_setting_normal.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/img/recorder_mini.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/img/recorder_setting.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/img/recorder_seting_with_text.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/img/recorder_setting_change.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/img/recorder_choose_path.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/img/recorder_close_setting.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/boxuegu/Screen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/ImageUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/boxuegu/ImageUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/FileUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/FileUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/timeUtils.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/Player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="47" column="56" lean-forward="true" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+          <folding>
+            <element signature="e#48#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/Locate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/ImageUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/Control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/new_heima/recording.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

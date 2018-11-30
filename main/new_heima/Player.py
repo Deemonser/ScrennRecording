@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import requests
 
-import os, time
+import time
+
+import timeUtils
+import Locate
+import ImageUtils
+import os
 import pyautogui
-from PIL import Image
-
-from main import Screen, ImageUtils, timeUtils
-from aip import AipOcr
-from main.ImageUtils import *
 
 
-class Video(object):
+class Player(object):
     def __init__(self, path):
         self.path = path
         self.width, self.height = pyautogui.size()
@@ -25,14 +24,14 @@ class Video(object):
 
     def play(self):
         os.startfile(self.path)
-        pyautogui.click(Screen.getPosition('./image/player_1/player_play.png'))
+        pyautogui.click(Locate.getPosition('./img/player_play.png'))
 
     def fullWindow(self):
-        # pyautogui.click(Screen.getPosition('./image/player_full.png'))
-        pyautogui.click(Screen.getPosition('./image/player_1/player_full.png'))
+        # pyautogui.click(Locate.getPosition('./image/player_full.png'))
+        pyautogui.click(Locate.getPosition('./img/player_full.png'))
         pyautogui.press("left", 3)
         pyautogui.moveTo(self.width / 2, self.height - 20)
-        # pyautogui.click(Screen.getPosition('./image/player_1/player_stop.png'))
+        # pyautogui.click(Locate.getPosition('./image/player_1/player_stop.png'))
         # time.sleep(0.5)
 
         pyautogui.press("space")
@@ -46,7 +45,7 @@ class Video(object):
 
     def getDuring(self):
         timeInfo = ImageUtils.ocr(
-            image_to_bytes(screenshotByImage('./image/player_1/player_during.png', 0, 0, 150, 40)))
+            ImageUtils.image_to_bytes(ImageUtils.screenshotByImage('./img/player_during.png', 0, 0, 150, 40)))
         during = timeUtils.handleOcrTime(timeInfo['words_result'][0]['words'].split('/'))
         print(during)
         return during
@@ -58,8 +57,8 @@ class Video(object):
     def closeWindow(self):
         pyautogui.hotkey("alt", "f4")
         # pyautogui.press("esc")
-        # pyautogui.click(Screen.getPosition('./image/player_1/player_close.png'))
+        # pyautogui.click(Locate.getPosition('./image/player_1/player_close.png'))
 
 
-class Movie_MP4(Video):
+class Movie_MP4(Player):
     type = 'MP4'

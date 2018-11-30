@@ -3,7 +3,7 @@ import os
 import pyautogui
 from aip import AipOcr
 from io import BytesIO
-from Screen import getLocateOnScreen
+from Locate import getLocateOnScreen
 
 APP_ID = '14751225'
 API_KEY = 'fKdnAilSeCIcWrs7GDtGz4xG'
