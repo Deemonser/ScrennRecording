@@ -30,11 +30,11 @@ class Control:
         # pyautogui.moveTo(500, 500)
 
         # os.startfile(r'C:\Program Files (x86)\EVCapture\EVCapture.exe')
-        # time.sleep(1)
-        # pyautogui.hotkey("ctrl", "f3")
-        # time.sleep(0.5)
-        # self.hideWindow()
-
+        pyautogui.click(563, 1065, duration=0.2)
+        time.sleep(1)
+        pyautogui.hotkey("ctrl", "f3")
+        time.sleep(0.5)
+        self.hideWindow()
 
         #     播放及录制
         pyautogui.hotkey("ctrl", "f4", during=0.2)
@@ -53,8 +53,9 @@ class Control:
         pyautogui.hotkey("ctrl", "f2", during=0.2)
         time.sleep(1)
         pyautogui.hotkey("ctrl", "v", during=0.2)
-        time.sleep(0.2)
+        time.sleep(1)
         pyautogui.press("enter")
+        time.sleep(1)
 
         #   隐藏界面
         self.hideWindow()
@@ -65,7 +66,15 @@ class Control:
     def find_next(self):
         self.i = self.i + 1
         print("find count:" + str(self.i))
-        if self.i > 10:
+        if self.i % 30 == 0:
+            print("find image: play_player")
+            result = pyautogui.locateOnScreen("./boxue_img/play_player.png")
+            if not result is None:
+                pyautogui.click(pyautogui.center(result), duration=0.2)
+                self.i = 0
+
+        if self.i % 10 == 0:
+            print("find image: next")
             result = pyautogui.locateOnScreen("./boxue_img/next.png")
             if not result is None:
                 pyautogui.click(pyautogui.center(result), duration=0.2)
@@ -89,9 +98,9 @@ class Control:
     def getFileName(self):
         x, y = getPosition("./boxue_img/file_name.png")
         pyautogui.mouseDown(x, y)
-        pyautogui.moveRel(250, None)
+        pyautogui.moveRel(215, None)
         pyautogui.hotkey("ctrl", "c")
-        pyautogui.moveRel(20, None)
+        pyautogui.moveRel(50, None)
         pyautogui.mouseUp()
         pyautogui.click(1800, 885)
         fileName = pyperclip.paste()
@@ -100,10 +109,10 @@ class Control:
 
     def getChildName(self):
         x, y = getPosition("./boxue_img/child_name.png")
-        pyautogui.mouseDown(x - 260, y)
-        pyautogui.moveRel(270, None)
+        pyautogui.mouseDown(x - 250, y)
+        pyautogui.moveRel(260, None)
         pyautogui.hotkey("ctrl", "c")
-        pyautogui.moveRel(20, None)
+        pyautogui.moveRel(40, None)
         pyautogui.mouseUp()
         pyautogui.click(1800, 885)
         childName = pyperclip.paste()

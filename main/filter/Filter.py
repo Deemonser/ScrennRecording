@@ -1,6 +1,6 @@
 import os, shutil
 
-import threading
+import multiprocessing
 from multiprocessing.pool import Pool
 from pydub import AudioSegment
 import subprocess
@@ -11,13 +11,17 @@ import numpy as np
 import math
 import time
 import cv2
+import pathlib
 
 
 class filter:
 
-    def __init__(self, filePath, image):
+    def __init__(self, filePath, imagetarget):
         self.filePath = filePath
-        self.image = image
+        # 读取 目标图片
+        self.target = imagetarget
+        # 目标图片的宽高
+        self.th, self.tw = self.target.shape[:2]
 
     def start(self):
         print(time.ctime())
@@ -29,13 +33,32 @@ class filter:
 
         print(time.ctime())
 
+    def prepare(self):
+        # ffmpeg 不识别空格，重命名
+        self.videoInfo = VideoInfo(self.filePath)
+        # 过滤 logo 后的视频文件名
+
+        os.rename(self.videoInfo.srcPath, self.videoInfo.tmpPath)
+
+        # 创建视频
+        self.video = cv2.VideoCapture(str(self.videoInfo.tmpPath))
+
+        # 创建 过滤后的视频文件
+        size = (int(self.video.get(cv2.CAP_PROP_FRAME_WIDTH)), int(self.video.get(cv2.CAP_PROP_FRAME_HEIGHT)))
+        fps = self.video.get(cv2.CAP_PROP_FPS) * 1.046
+        self.out = cv2.VideoWriter(str(self.videoInfo.filterFile), cv2.VideoWriter_fourcc(*'H264'), fps, size)
+
+        self.canFastFind = False
+        self.lastPoint = [0, 0]
+        self.size = 20
+
     def coverImage(self):
         # construct the argument parse and parse the arguments
 
         # start the file video stream thread and allow the buffer to
         # start to fill
-        print("[INFO] starting video file thread..." + self.renameFile)
-        fvs = FileVideoStream(self.renameFile).start()
+        print("[INFO] starting video file thread..." + str(self.videoInfo.tmpPath))
+        fvs = FileVideoStream(str(self.videoInfo.tmpPath)).start()
         time.sleep(1.0)
 
         # start the FPS timer
@@ -101,44 +124,31 @@ class filter:
         cv2.putText(frame, "Deemons", (p1[0], p1[1] + int(self.th * 0.75)), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
                     (144, 144, 144), 2)
 
-    def prepare(self):
-        # ffmpeg 不识别空格，重命名
-        self.path, self.fileName = os.path.split(self.filePath)
-        rename = str(self.fileName).replace(' ', '')
-        # 过滤 logo 后的视频文件名
-        self.filterFile = os.path.join(self.path, rename.split('.')[0] + '.avi')
-        self.renameFile = os.path.join(self.path, rename)
-        os.rename(self.filePath, self.renameFile)
-
-        video_format(self.renameFile)
-
-        # 创建视频
-        self.video = cv2.VideoCapture(rename)
-        # 读取 目标图片
-        self.target = img2HSV(cv2.imread(self.image, cv2.IMREAD_UNCHANGED))
-        # 目标图片的宽高
-        self.th, self.tw = self.target.shape[:2]
-
-        # 创建 过滤后的视频文件
-        size = (int(self.video.get(cv2.CAP_PROP_FRAME_WIDTH)), int(self.video.get(cv2.CAP_PROP_FRAME_HEIGHT)))
-        fps = self.video.get(cv2.CAP_PROP_FPS)
-        self.out = cv2.VideoWriter(self.filterFile, cv2.VideoWriter_fourcc(*'H264'), fps, size)
-
-        self.canFastFind = False
-        self.lastPoint = [0, 0]
-        self.size = 20
-
     def handle(self):
-        mp3 = video2mp3(self.renameFile)
-        outfile = video_add_mp3(self.filterFile, mp3)
-        os.rename(self.renameFile, self.filePath)
-        # os.remove(self.filterFile)
+        mp3 = video2mp3(str(self.videoInfo.tmpPath))
+        outfile = video_add_mp3(str(self.videoInfo.filterFile), mp3)
+
+        os.rename(str(self.videoInfo.tmpPath), self.videoInfo.src)
+
+        # os.remove(str(self.videoInfo.filterFile))
         # os.remove(mp3)
 
-        path, newName = FileUtils.getOtherFilePath(self.filePath, "视频去水印")
-        print(outfile)
-        shutil.move(outfile, path)
-        os.rename(os.path.join(path, os.path.split(outfile)[1]), os.path.join(path, os.path.split(self.filePath)[1]))
+        # path, newName = FileUtils.getOtherFilePath(self.filePath, "视频去水印")
+        # print(outfile)
+        # shutil.move(outfile, path)
+        # os.rename(os.path.join(path, os.path.split(outfile)[1]), os.path.join(path, os.path.split(self.filePath)[1]))
+
+
+class VideoInfo:
+
+    def __init__(self, src):
+        self.src = src
+        self.srcPath = pathlib.Path(src)
+        self.srcName = self.srcPath.name
+        self.srcParentPath = self.srcPath.parent
+        self.tmpName = str(int(time.time()))
+        self.tmpPath = self.srcParentPath / self.tmpName
+        self.filterFile = self.srcParentPath / (self.tmpName + ".avi")
 
 
 def img2HSV(frame):
@@ -157,7 +167,7 @@ def video2mp3(file_name):
 
 
 def video_add_mp3(file_name, mp3_file):
-    outfile_name = file_name.split('.')[0] + '-t.mp4'
+    outfile_name = file_name.split('.')[0] + '-f.mp4'
     subprocess.call(
         'ffmpeg -y -i ' + file_name + ' -i ' + mp3_file + ' -c:v copy -c:a aac -strict experimental ' + outfile_name,
         shell=True)
@@ -174,17 +184,17 @@ def video_format(file_name):
     # os.rename(outfile_name, file_name)
 
 
-def doSigleTask(file):
-    filter(file, "test2.png").start()
+def doSigleTask(file, imageTarget):
+    filter(file, imageTarget).start()
 
 
 def doAllTask(path):
     fileList = FileUtils.getFile(path, '.mp4')
 
     pool = Pool(12)
-
+    image = img2HSV(cv2.imread("test2.png", cv2.IMREAD_UNCHANGED))
     for file in fileList:
-        pool.apply_async(doSigleTask(file))
+        pool.apply_async(doSigleTask(file, image))
 
     pool.close()
     pool.join()
@@ -209,6 +219,11 @@ def getHSV():
     cv2.waitKey(0)
 
 
+def do(path):
+    record = filter(path, "test2.png")
+    record.start()
+
+
 # [  2 250 248]
 # [  3 247 255]
 # [  3 255 255]
@@ -224,10 +239,19 @@ def getHSV():
 # [  0   0 255]
 # [  2 184 140]
 
+# 19.882164800942682
+# 31496.0
+
+# 18.99999095123621
+# 31496.0
 if __name__ == '__main__':
-    video_format('/Users/deemons/PycharmProjects/ScrennRecording/main/filter/01-PSandAI.mp4')
-    # video_add_mp3('test中文_copy.avi', '01-PSandAI.mp3')
-    # record = filter('/Users/deemons/PycharmProjects/ScrennRecording/main/filter/01-PSandAI.mp4', "test2.png")
+    record = filter('/Users/deemons/PycharmProjects/ScrennRecording/main/filter/1.画册的基本概念.mp4', img2HSV(cv2.imread("test2.png", cv2.IMREAD_UNCHANGED)))
+    record.start()
+
+    # video = cv2.VideoCapture('/Users/deemons/PycharmProjects/ScrennRecording/main/filter/6-图层打组及复制对象.mp4')
+    # print(video.get(5))
+    # print(video.get(7))
+
     # doAllTask('/Users/deemons/PycharmProjects/ScrennRecording/main/filter')
     # print("main===>> " + threading.current_thread().name)
 
