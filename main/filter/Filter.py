@@ -1,12 +1,8 @@
 import os, shutil
 
-import multiprocessing
-from multiprocessing.pool import Pool
 from pydub import AudioSegment
 import subprocess
-from main import FileUtils
-from imutils.video import FileVideoStream
-from imutils.video import FPS
+from imutils.video import FileVideoStream, FPS
 import numpy as np
 import math
 import time
@@ -19,38 +15,44 @@ class filter:
     def __init__(self, filePath, imagetarget):
         self.filePath = filePath
         # 读取 目标图片
-        self.target = imagetarget
+        self.target = img2HSV(cv2.imread(imagetarget, cv2.IMREAD_UNCHANGED))
         # 目标图片的宽高
         self.th, self.tw = self.target.shape[:2]
+        self.videoInfo = VideoInfo(self.filePath)
 
     def start(self):
-        print(time.ctime())
+
         self.prepare()
 
-        self.coverImage()
+        try:
+            self.coverImage()
+            outFile = self.handle()
+        except Exception as e:
+            print(e)
 
-        self.handle()
+        self.end()
 
-        print(time.ctime())
+    def end(self):
+        os.remove(str(self.videoInfo.tmpPath))
 
     def prepare(self):
-        # ffmpeg 不识别空格，重命名
-        self.videoInfo = VideoInfo(self.filePath)
-        # 过滤 logo 后的视频文件名
-
-        os.rename(self.videoInfo.srcPath, self.videoInfo.tmpPath)
+        print('process id:', os.getpid())
+        shutil.copy(self.videoInfo.srcPath, self.videoInfo.tmpPath)
 
         # 创建视频
         self.video = cv2.VideoCapture(str(self.videoInfo.tmpPath))
 
         # 创建 过滤后的视频文件
-        size = (int(self.video.get(cv2.CAP_PROP_FRAME_WIDTH)), int(self.video.get(cv2.CAP_PROP_FRAME_HEIGHT)))
-        fps = self.video.get(cv2.CAP_PROP_FPS) * 1.046
+        self.src_w = int(self.video.get(cv2.CAP_PROP_FRAME_WIDTH))
+        self.src_h = int(self.video.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        size = (self.src_w, self.src_h)
+        self.videoInfo.fps = self.video.get(cv2.CAP_PROP_FPS)
+        fps = self.videoInfo.fps * 1.03
         self.out = cv2.VideoWriter(str(self.videoInfo.filterFile), cv2.VideoWriter_fourcc(*'H264'), fps, size)
 
         self.canFastFind = False
         self.lastPoint = [0, 0]
-        self.size = 20
+        self.size = 120
 
     def coverImage(self):
         # construct the argument parse and parse the arguments
@@ -72,13 +74,11 @@ class filter:
             print(index)
 
             frame = fvs.read()
-
             p1, p2 = self.find_logo(frame)
 
             self.draw_logo(frame, p1, p2)
 
             self.out.write(frame)
-
             fps.update()
 
         fps.stop()
@@ -91,28 +91,53 @@ class filter:
         self.out.release()
 
     def find_logo(self, frame):
+        tmpFrame = frame
         if self.canFastFind:
-            frame = self.copyImage(frame)
+            tmpFrame = self.copyImage(tmpFrame)
 
-        mask = img2HSV(frame)
+        mask = img2HSV(tmpFrame)
         result = cv2.matchTemplate(mask, self.target, cv2.TM_CCOEFF_NORMED)
         min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
         p1 = max_loc
+
         if self.canFastFind:
-            p1 = [(self.lastPoint[0] - self.size) + p1[0], (self.lastPoint[1] - self.size) + p1[1]]
+            x = (self.lastPoint[0] - self.size)
+            y = (self.lastPoint[1] - self.size)
+            if x < 0:
+                x = 0
+            if y < 0:
+                y = 0
+            p1 = (x + p1[0], y + p1[1])
 
-        if p1[0] != 0 and p1[1] != 0 and self.get_distant(self.lastPoint, p1) < 10 and not self.canFastFind:
+        if p1[0] != 0 and p1[1] != 0 and self.get_distant(self.lastPoint, p1) < 20 and not self.canFastFind:
             self.find_count = self.find_count + 1
-            self.lastPoint = p1
-            if self.find_count > 6:
+            if self.find_count > 4:
                 self.canFastFind = True
+        else:
+            self.find_count = 0
 
+        self.lastPoint = p1
         p2 = (p1[0] + self.tw, p1[1] + self.th)
         return p1, p2
 
     def copyImage(self, frame):
         w, h = self.lastPoint
-        return frame[(w - self.size):(h - self.size), (w + self.tw + self.size):(h + self.th + self.size)]
+        w1 = w - self.size
+        h1 = h - self.size
+
+        w2 = w + self.tw + self.size
+        h2 = h + self.th + self.size
+
+        if w1 < 0:
+            w1 = 0
+        if h1 < 0:
+            h1 = 0
+        if w2 > self.src_w:
+            w2 = self.src_w
+        if h2 > self.src_h:
+            h2 = self.src_h
+
+        return frame[(h1):(h2), (w1):(w2)]
 
     def get_distant(self, p1, p2):
         p3 = np.array(p2) - np.array(p1)
@@ -125,23 +150,25 @@ class filter:
                     (144, 144, 144), 2)
 
     def handle(self):
+        video_format(str(self.videoInfo.filterFile), str(self.videoInfo.fps), str(self.videoInfo.formatMP4))
         mp3 = video2mp3(str(self.videoInfo.tmpPath))
-        outfile = video_add_mp3(str(self.videoInfo.filterFile), mp3)
+        outFile = video_add_mp3(str(self.videoInfo.formatMP4), mp3)
 
-        os.rename(str(self.videoInfo.tmpPath), self.videoInfo.src)
+        # 删除临时视频
+        os.remove(str(self.videoInfo.filterFile))
+        os.remove(str(self.videoInfo.formatMP4))
+        # 删除临时音频
+        os.remove(mp3)
 
-        # os.remove(str(self.videoInfo.filterFile))
-        # os.remove(mp3)
+        shutil.move(outFile, self.videoInfo.outFile)
 
-        # path, newName = FileUtils.getOtherFilePath(self.filePath, "视频去水印")
-        # print(outfile)
-        # shutil.move(outfile, path)
-        # os.rename(os.path.join(path, os.path.split(outfile)[1]), os.path.join(path, os.path.split(self.filePath)[1]))
+        return outFile
 
 
 class VideoInfo:
 
     def __init__(self, src):
+        self.fps = None
         self.src = src
         self.srcPath = pathlib.Path(src)
         self.srcName = self.srcPath.name
@@ -149,12 +176,45 @@ class VideoInfo:
         self.tmpName = str(int(time.time()))
         self.tmpPath = self.srcParentPath / self.tmpName
         self.filterFile = self.srcParentPath / (self.tmpName + ".avi")
+        self.formatMP4 = self.srcParentPath / (self.tmpName + "-f.mp4")
+        self.tmpMP3 = self.srcParentPath / (self.tmpName + ".mp3")
+        self.tmpMP4 = self.srcParentPath / (self.tmpName + "-t.mp4")
+        path, newName = getOtherFilePath(self.src, self.srcParentPath.name + '_filter')
+        self.outFile = os.path.join(path, newName)
+
+
+def getFile(path, text):
+    fileList = []
+    searchFile(fileList, path, text)
+    return fileList
+
+
+def searchFile(fileList, path, text):
+    try:
+        files = os.listdir(path)
+        for f in files:
+            fl = os.path.join(path, f)
+            if os.path.isdir(fl):
+                # print fl
+                searchFile(fileList, fl, text)
+            elif os.path.isfile(fl) and os.path.splitext(fl)[1] == text:
+                fileList.append(fl)
+    except Exception:
+        ""
+
+
+def getOtherFilePath(filePath, otherFileName):
+    path = os.path.join(os.path.dirname(os.path.dirname(filePath)), otherFileName)
+    if not os.path.exists(path):
+        os.makedirs(path)
+    srcName = os.path.split(filePath)[1]
+    return path, srcName
 
 
 def img2HSV(frame):
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-    lower = np.array([0, 90, 60])  # 所要检测的像素范围
-    upper = np.array([11, 260, 260])  # 此处检测绿色区域
+    lower = np.array([0, 220, 210])  # 所要检测的像素范围
+    upper = np.array([3, 260, 260])  # 此处检测绿色区域
     mask = cv2.inRange(hsv, lowerb=lower, upperb=upper)
     return mask
 
@@ -167,37 +227,38 @@ def video2mp3(file_name):
 
 
 def video_add_mp3(file_name, mp3_file):
-    outfile_name = file_name.split('.')[0] + '-f.mp4'
+    outfile_name = file_name.split('.')[0] + '-t.mp4'
     subprocess.call(
         'ffmpeg -y -i ' + file_name + ' -i ' + mp3_file + ' -c:v copy -c:a aac -strict experimental ' + outfile_name,
         shell=True)
     return outfile_name
 
 
-def video_format(file_name):
+def video_format(file_name, fps, out_file):
     split = file_name.split('.')
-    outfile_name = split[0] + '-t.' + split[1]
     subprocess.call(
-        'ffmpeg -y -i ' + file_name + ' -r 30 -b 600k ' + outfile_name,
+        'ffmpeg -y -threads 4 -r ' + fps + ' -i ' + file_name + ' ' + out_file,
         shell=True)
-    # os.remove(file_name)
-    # os.rename(outfile_name, file_name)
 
 
-def doSigleTask(file, imageTarget):
-    filter(file, imageTarget).start()
+def doSigleTask(fil):
+    fil.start()
+    fil.end()
 
 
 def doAllTask(path):
-    fileList = FileUtils.getFile(path, '.mp4')
+    fileList = getFile(path, '.mp4')
+    print(fileList)
 
-    pool = Pool(12)
-    image = img2HSV(cv2.imread("test2.png", cv2.IMREAD_UNCHANGED))
     for file in fileList:
-        pool.apply_async(doSigleTask(file, image))
-
-    pool.close()
-    pool.join()
+        try:
+            fil = filter(file, "test3.png")
+            fil.start()
+        except Exception as e:
+            print(e)
+    # while True:
+    #     out, frame = queue.get()
+    #     out.write(frame)
 
 
 def getpos(event, x, y, flags, param):
@@ -205,7 +266,7 @@ def getpos(event, x, y, flags, param):
         print(HSV[y, x])
 
 
-mat = cv2.imread("test2.png", cv2.IMREAD_UNCHANGED)
+mat = cv2.imread("test.png", cv2.IMREAD_UNCHANGED)
 # cv2.imshow("", mat)
 
 HSV = cv2.cvtColor(mat, cv2.COLOR_BGR2HSV)
@@ -217,11 +278,6 @@ def getHSV():
     cv2.imshow('image', mat)
     cv2.setMouseCallback("imageHSV", getpos)
     cv2.waitKey(0)
-
-
-def do(path):
-    record = filter(path, "test2.png")
-    record.start()
 
 
 # [  2 250 248]
@@ -242,17 +298,22 @@ def do(path):
 # 19.882164800942682
 # 31496.0
 
-# 18.99999095123621
-# 31496.0
+# 19.91575965409274
+# 8905.0
+# 19.91576
+# 8869.0
 if __name__ == '__main__':
-    record = filter('/Users/deemons/PycharmProjects/ScrennRecording/main/filter/1.画册的基本概念.mp4', img2HSV(cv2.imread("test2.png", cv2.IMREAD_UNCHANGED)))
-    record.start()
+    # record = filter('/Users/deemons/PycharmProjects/ScrennRecording/main/filter/1.画册的基本概念.mp4',
+    #                 img2HSV(cv2.imread("test2.png", cv2.IMREAD_UNCHANGED)))
+    # record.start()
 
-    # video = cv2.VideoCapture('/Users/deemons/PycharmProjects/ScrennRecording/main/filter/6-图层打组及复制对象.mp4')
+    # video = cv2.VideoCapture('/Users/deemons/PycharmProjects/ScrennRecording/main/filter/out.mp4')
     # print(video.get(5))
     # print(video.get(7))
 
-    # doAllTask('/Users/deemons/PycharmProjects/ScrennRecording/main/filter')
+    doAllTask('/Volumes/shirly/UI/tmp12')
+
+
     # print("main===>> " + threading.current_thread().name)
 
     # hsv = cv2.cvtColor(cv2.imread("test2.png", cv2.IMREAD_UNCHANGED), cv2.COLOR_BGR2HSV)
@@ -263,6 +324,6 @@ if __name__ == '__main__':
 
     # getHSV()
 
-    # cv2.imshow("", img2HSV(cv2.imread("test2.png", cv2.IMREAD_UNCHANGED)))
+    # cv2.imshow("", img2HSV(cv2.imread("test333.png", cv2.IMREAD_UNCHANGED)))
     #
     # cv2.waitKey(0)
